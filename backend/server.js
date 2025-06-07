@@ -28,6 +28,7 @@ const allowedOrigins = [
     'https://navbharatemployeesuppliers.com', // Replace with your actual frontend domain
     'https://www.navbharatemployeesuppliers.com', // Add www if applicable
     // Add any other domains that need to access your API
+    'http://localhost:3000',
 ];
 
 const corsOptions = {
@@ -43,7 +44,7 @@ const corsOptions = {
 };
 
 app.use(cors(corsOptions));
-// app.options('*', cors(corsOptions));
+app.options('*', cors(corsOptions));
 console.log(allowedOrigins)
 
 // Rate limiting
