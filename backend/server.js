@@ -17,10 +17,13 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet());
 
 // CORS configuration
-app.use(cors({
+const corsOptions = {
     origin: process.env.FRONTEND_URL || 'http://localhost:3000',
-    credentials: true
-}));
+    credentials: true,
+};
+
+app.use(cors(corsOptions));
+app.options('*', cors(corsOptions));
 
 // Rate limiting
 app.use(generalLimiter);
