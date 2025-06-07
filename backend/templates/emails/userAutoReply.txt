@@ -1,0 +1,21 @@
+Dear {{name}},
+
+Thank you for reaching out to {{companyName}}. We have received your message and appreciate your interest in our professional staffing solutions.
+
+What happens next?
+==================
+- Our team will review your message within 24 hours
+- A staffing specialist will contact you to discuss your needs
+- We'll provide tailored solutions for your business requirements
+
+Contact Information:
+===================
+Phone: {{companyPhone}}
+Email: {{companyEmail}}
+Address: {{companyAddress}}
+
+Best regards,
+The {{companyName}} Team
+
+---
+{{companyName}} - Your Trusted Partner in Professional Staffing

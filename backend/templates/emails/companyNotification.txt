@@ -1,0 +1,19 @@
+New Contact Form Submission - {{companyName}}
+
+Contact Details:
+================
+
+Name: {{name}}
+Email: {{email}}
+
+Message:
+--------
+{{message}}
+
+Submission Information:
+======================
+Submitted: {{submittedAt}}
+IP Address: {{userIp}}
+
+---
+{{companyName}} - Professional Staffing Solutions
