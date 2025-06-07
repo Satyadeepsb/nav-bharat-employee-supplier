@@ -46,7 +46,7 @@ const Header = () => {
                     <Link to="/" className="flex items-center space-x-2">
                         <Users className="h-8 w-8 text-primary-600" />
                         <span className="text-xl font-bold text-gray-900">
-              EmployeeSupplier
+              {import.meta.env.VITE_COMPANY_NAME}
             </span>
                     </Link>
 

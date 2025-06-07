@@ -13,43 +13,43 @@ const ClientLogos = () => {
         },
         {
             name: 'Digital Dynamics',
-            logo: 'https://via.placeholder.com/160x80/059669/ffffff?text=DigitalDyn'
+            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
         },
         {
             name: 'Healthcare Solutions',
-            logo: 'https://via.placeholder.com/160x80/7c3aed/ffffff?text=HealthSol'
+            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
         },
         {
             name: 'Creative Studios',
-            logo: 'https://via.placeholder.com/160x80/ea580c/ffffff?text=Creative'
+            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
         },
         {
             name: 'Construction Plus',
-            logo: 'https://via.placeholder.com/160x80/0891b2/ffffff?text=ConstPlus'
+            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
         },
         {
             name: 'Financial Partners',
-            logo: 'https://via.placeholder.com/160x80/be185d/ffffff?text=FinPartners'
+            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
         },
         {
             name: 'Retail Innovations',
-            logo: 'https://via.placeholder.com/160x80/4338ca/ffffff?text=RetailInn'
+            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
         },
         {
             name: 'Energy Dynamics',
-            logo: 'https://via.placeholder.com/160x80/65a30d/ffffff?text=EnergyDyn'
+            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
         },
         {
             name: 'Media Group',
-            logo: 'https://via.placeholder.com/160x80/dc2626/ffffff?text=MediaGrp'
+            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
         },
         {
             name: 'Logistics Pro',
-            logo: 'https://via.placeholder.com/160x80/2563eb/ffffff?text=LogiPro'
+            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
         },
         {
             name: 'Education First',
-            logo: 'https://via.placeholder.com/160x80/059669/ffffff?text=EduFirst'
+            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
         }
     ];
 

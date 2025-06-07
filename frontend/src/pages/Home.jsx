@@ -24,7 +24,7 @@ const Home = ({ section }) => {
     return (
         <>
             <Helmet>
-                <title>EmployeeSupplier - Professional Staffing & Employee Supplier Services</title>
+                <title>{import.meta.env.VITE_NAME}</title>
                 <meta
                     name="description"
                     content="Find qualified employees for your business with our professional staffing services. Permanent, temporary, and contract staffing solutions across all industries. Get started today!"

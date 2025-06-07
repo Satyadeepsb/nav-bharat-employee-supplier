@@ -86,7 +86,7 @@ const ContactForm = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                                    <p className="text-gray-600">+1 (555) 123-4567</p>
+                                    <p className="text-gray-600">{import.meta.env.VITE_COMPANY_PHONE}</p>
                                     <p className="text-sm text-gray-500">Mon-Fri 9AM-6PM EST</p>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ const ContactForm = () => {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                                    <p className="text-gray-600">info@employeesupplier.com</p>
+                                    <p className="text-gray-600">{import.meta.env.VITE_COMPANY_EMAIL}</p>
                                     <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
                                 </div>
                             </div>
@@ -109,8 +109,8 @@ const ContactForm = () => {
                                 <div>
                                     <h4 className="font-semibold text-gray-900 mb-1">Office</h4>
                                     <p className="text-gray-600">
-                                        123 Business District<br />
-                                        New York, NY 10001
+                                        {import.meta.env.VITE_COMPANY_ADDRESS1}<br />
+                                        {import.meta.env.VITE_COMPANY_ADDRESS2}
                                     </p>
                                 </div>
                             </div>

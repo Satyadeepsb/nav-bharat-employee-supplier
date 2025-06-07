@@ -19,7 +19,7 @@ const Footer = () => {
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
                             <Users className="h-8 w-8 text-primary-400" />
-                            <span className="text-xl font-bold">EmployeeSupplier</span>
+                            <span className="text-xl font-bold">{import.meta.env.VITE_COMPANY_NAME}</span>
                         </div>
                         <p className="text-gray-300 text-sm">
                             Your trusted partner in finding the right talent for your business.
@@ -78,15 +78,15 @@ const Footer = () => {
                         <div className="space-y-3 text-sm">
                             <div className="flex items-center gap-2 text-gray-300">
                                 <Phone className="h-4 w-4" />
-                                <span>+1 (555) 123-4567</span>
+                                <span>{import.meta.env.VITE_COMPANY_PHONE}</span>
                             </div>
                             <div className="flex items-center gap-2 text-gray-300">
                                 <Mail className="h-4 w-4" />
-                                <span>info@employeesupplier.com</span>
+                                <span>{import.meta.env.VITE_COMPANY_EMAIL}</span>
                             </div>
                             <div className="flex items-start gap-2 text-gray-300">
                                 <MapPin className="h-4 w-4 mt-0.5" />
-                                <span>123 Business District<br />New York, NY 10001</span>
+                                <span>{import.meta.env.VITE_COMPANY_ADDRESS1}<br />{import.meta.env.VITE_COMPANY_ADDRESS2}</span>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <div className="border-t border-gray-800 mt-8 pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">
-                            © {currentYear} EmployeeSupplier. All rights reserved.
+                            © {currentYear} {import.meta.env.VITE_COMPANY_NAME}. All rights reserved.
                         </p>
                         <div className="flex space-x-6 mt-4 md:mt-0">
                             <a href="#" className="text-gray-400 hover:text-primary-400 text-sm transition-colors">
