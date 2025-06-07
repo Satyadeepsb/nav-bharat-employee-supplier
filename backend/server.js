@@ -17,15 +17,34 @@ const PORT = process.env.PORT || 5000;
 app.use(helmet());
 
 // CORS configuration
-const corsOptions = {
+const corsOptions1 = {
     origin: true, // Allow all origins (ONLY FOR TESTING)
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }
 
+
+const allowedOrigins = [
+    'https://navbharatemployeesuppliers.com', // Replace with your actual frontend domain
+    'https://www.navbharatemployeesuppliers.com', // Add www if applicable
+    // Add any other domains that need to access your API
+];
+
+const corsOptions = {
+    origin: function (origin, callback) {
+        if (allowedOrigins.indexOf(origin) !== -1 || !origin) {
+            callback(null, true); // Allow the request
+        } else {
+            callback(new Error('Not allowed by CORS')); // Block the request
+        }
+    },
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE', // Allowed HTTP methods
+    optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 200
+};
+
 app.use(cors(corsOptions));
-app.options('*', cors(corsOptions));
-console.log(corsOptions)
+// app.options('*', cors(corsOptions));
+console.log(allowedOrigins)
 
 // Rate limiting
 app.use(generalLimiter);
