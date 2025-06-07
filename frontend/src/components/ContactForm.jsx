@@ -23,7 +23,7 @@ const ContactForm = () => {
         setStatus({ type: '', message: '' });
 
         try {
-            const response = await fetch(`${process.env.BACKEND_URL}/api/contact`, {
+            const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
