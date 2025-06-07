@@ -20,8 +20,7 @@ app.use(helmet());
 const corsOptions = {
     origin: [ process.env.FRONTEND_URL || 'http://localhost:3000',
         'https://navbharatemployeesuppliers.com',
-        'https://www.navbharatemployeesuppliers.com'],
-    credentials: true,
+        'https://www.navbharatemployeesuppliers.com']
 };
 
 app.use(cors(corsOptions));

@@ -28,8 +28,7 @@ const ContactForm = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formData),
-                credentials: 'include'
+                body: JSON.stringify(formData)
             });
 
             const data = await response.json();
