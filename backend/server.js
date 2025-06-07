@@ -23,6 +23,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
+console.log(corsOptions)
 
 // Rate limiting
 app.use(generalLimiter);
