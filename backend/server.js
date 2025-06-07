@@ -18,8 +18,10 @@ app.use(helmet());
 
 // CORS configuration
 const corsOptions = {
-    origin: '*'
-};
+    origin: true, // Allow all origins (ONLY FOR TESTING)
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
+}
 
 app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
