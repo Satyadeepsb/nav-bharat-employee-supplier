@@ -18,6 +18,8 @@ const Home = ({ section }) => {
                     element.scrollIntoView({ behavior: 'smooth' });
                 }, 100);
             }
+        } else {
+            document.getElementById('home').scrollIntoView({ behavior: 'smooth' });
         }
     }, [section]);
 
@@ -40,14 +42,14 @@ const Home = ({ section }) => {
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="EmployeeSupplier - Professional Staffing Services" />
                 <meta property="og:description" content="Connect with qualified professionals through our comprehensive employee supplier services. Quality staffing solutions for businesses of all sizes." />
-                <meta property="og:url" content="https://your-domain.com" />
-                <meta property="og:image" content="https://your-domain.com/og-image.jpg" />
+                <meta property="og:url" content="https://www.navbharatemployeesuppliers.com" />
+                <meta property="og:image" content="https://www.navbharatemployeesuppliers.com/og-image.jpg" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="EmployeeSupplier - Professional Staffing Services" />
                 <meta name="twitter:description" content="Find the perfect employees for your business with our comprehensive staffing solutions." />
-                <meta name="twitter:image" content="https://your-domain.com/twitter-image.jpg" />
+                <meta name="twitter:image" content="https://www.navbharatemployeesuppliers.com/twitter-image.jpg" />
 
                 {/* Structured Data */}
                 <script type="application/ld+json">
@@ -56,21 +58,21 @@ const Home = ({ section }) => {
                         "@type": "Organization",
                         "name": "EmployeeSupplier",
                         "description": "Professional employee supplier and staffing services",
-                        "url": "https://your-domain.com",
-                        "logo": "https://your-domain.com/logo.png",
+                        "url": "https://www.navbharatemployeesuppliers.com/",
+                        "logo": "https://www.navbharatemployeesuppliers.com/logo.png",
                         "contactPoint": {
                             "@type": "ContactPoint",
-                            "telephone": "+1-555-123-4567",
+                            "telephone": "+91 9021137437",
                             "contactType": "customer service",
                             "availableLanguage": "English"
                         },
                         "address": {
                             "@type": "PostalAddress",
-                            "streetAddress": "123 Business District",
-                            "addressLocality": "New York",
+                            "streetAddress": "PRAVIRA SANKUL FLOOR NO. FF-3",
+                            "addressLocality": "KADAMWADI, KOLHAPUR",
                             "addressRegion": "NY",
-                            "postalCode": "10001",
-                            "addressCountry": "US"
+                            "postalCode": "416003",
+                            "addressCountry": "IN"
                         },
                         "sameAs": [
                             "https://linkedin.com/company/employeesupplier",

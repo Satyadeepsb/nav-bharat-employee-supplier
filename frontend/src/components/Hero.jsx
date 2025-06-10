@@ -3,6 +3,7 @@ import { ArrowRight, CheckCircle } from 'lucide-react';
 
 const Hero = () => {
     const scrollToContact = () => {
+        window.history.pushState(null, '', '/contact');
         const element = document.getElementById('contact');
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });

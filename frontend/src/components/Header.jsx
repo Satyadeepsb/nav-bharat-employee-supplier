@@ -15,26 +15,27 @@ const Header = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const scrollToSection = (sectionId) => {
-        if (location.pathname !== '/') {
-            window.location.href = `/#${sectionId}`;
-            return;
-        }
-        const element = document.getElementById(sectionId);
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth' });
-            setIsMenuOpen(false);
-        }
-    };
+    // Close mobile menu when route changes
+    useEffect(() => {
+        setIsMenuOpen(false);
+    }, [location]);
 
     const navigation = [
-        { name: 'Home', id: 'home' },
-        { name: 'About', id: 'about' },
-        { name: 'Services', id: 'services' },
-        { name: 'Certificates', id: 'certificates' },
-        { name: 'Team', id: 'team' },
-        { name: 'Contact', id: 'contact' }
+        { name: 'Home', path: '/' },
+        { name: 'About', path: '/about' },
+        { name: 'Services', path: '/services' },
+        { name: 'Certificates', path: '/certificates' },
+        { name: 'Testimonials', path: '/testimonials' },
+        { name: 'Team', path: '/team' },
+        { name: 'Contact', path: '/contact' }
     ];
+
+    const isActivePath = (nav) => {
+        if (nav.name === 'Home' && location.pathname === '/') {
+            return true;
+        }
+        return location.pathname === nav.path;
+    };
 
     return (
         <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
@@ -46,27 +47,31 @@ const Header = () => {
                     <Link to="/" className="flex items-center space-x-2">
                         <Users className="h-8 w-8 text-primary-600" />
                         <span className="text-xl font-bold text-gray-900">
-              {import.meta.env.VITE_COMPANY_NAME}
-            </span>
+                            {import.meta.env.VITE_COMPANY_NAME}
+                        </span>
                     </Link>
 
                     {/* Desktop Navigation */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navigation.map((item) => (
-                            <button
+                            <Link
                                 key={item.name}
-                                onClick={() => scrollToSection(item.id)}
-                                className="text-gray-700 hover:text-primary-600 transition-colors duration-200 font-medium"
+                                to={item.path}
+                                className={`transition-colors duration-200 font-medium ${
+                                    isActivePath(item)
+                                        ? 'text-primary-600 border-b-2 border-primary-600'
+                                        : 'text-gray-700 hover:text-primary-600'
+                                }`}
                             >
                                 {item.name}
-                            </button>
+                            </Link>
                         ))}
-                        <button
-                            onClick={() => scrollToSection('contact')}
+                        <Link
+                            to="/contact"
                             className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors duration-200"
                         >
                             Get Started
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Mobile menu button */}
@@ -85,20 +90,24 @@ const Header = () => {
                     <div className="md:hidden bg-white border-t">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
-                                <button
+                                <Link
                                     key={item.name}
-                                    onClick={() => scrollToSection(item.id)}
-                                    className="block w-full text-left px-3 py-2 text-gray-700 hover:text-primary-600 hover:bg-gray-50 rounded-md transition-colors"
+                                    to={item.path}
+                                    className={`block px-3 py-2 rounded-md transition-colors ${
+                                        isActivePath(item)
+                                            ? 'text-primary-600 bg-primary-50'
+                                            : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+                                    }`}
                                 >
                                     {item.name}
-                                </button>
+                                </Link>
                             ))}
-                            <button
-                                onClick={() => scrollToSection('contact')}
-                                className="w-full mt-2 bg-primary-600 text-white px-3 py-2 rounded-md hover:bg-primary-700 transition-colors"
+                            <Link
+                                to="/contact"
+                                className="block w-full mt-2 bg-primary-600 text-white px-3 py-2 rounded-md hover:bg-primary-700 transition-colors text-center"
                             >
                                 Get Started
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 )}

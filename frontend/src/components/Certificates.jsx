@@ -29,7 +29,7 @@ const Certificates = () => {
             description: 'Certified by the National Association of Personnel Services',
             issuer: 'National Association of Personnel Services',
             category: 'Professional Services',
-            pdfUrl: '/certificates/staffing-cert.pdf',
+            pdfUrl: '/certificates/shop-act-licence.pdf',
             thumbnail: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
         }
     ];
@@ -88,32 +88,6 @@ const Certificates = () => {
                     </p>
                 </div>
 
-                {/* Category Filter */}
-                <div className="flex flex-wrap justify-center gap-2 mb-12">
-                    <button
-                        onClick={() => setActiveCategory('All')}
-                        className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                            activeCategory === 'All'
-                                ? 'bg-primary-600 text-white'
-                                : 'bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-600'
-                        }`}
-                    >
-                        All Certificates
-                    </button>
-                    {categories.map((category) => (
-                        <button
-                            key={category}
-                            onClick={() => setActiveCategory(category)}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
-                                activeCategory === category
-                                    ? 'bg-primary-600 text-white'
-                                    : 'bg-white text-gray-600 hover:bg-primary-50 hover:text-primary-600'
-                            }`}
-                        >
-                            {category}
-                        </button>
-                    ))}
-                </div>
 
                 {/* Certificates Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
