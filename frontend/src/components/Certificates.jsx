@@ -11,7 +11,7 @@ const Certificates = () => {
             id: 1,
             title: 'Shop Act Licence',
             issuer: 'Government of Maharashtra',
-            category: 'Quality Management',
+            category: 'Shop Act',
             pdfUrl: '/certificates/shop-act-licence.pdf',
             thumbnail: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
         },
@@ -19,18 +19,9 @@ const Certificates = () => {
             id: 2,
             title: 'Udyam Registration Certificate',
             issuer: 'Government of India - Ministry of Micro, Small and Medium Enterprises',
-            category: 'Security & Compliance',
+            category: 'Udyam',
             pdfUrl: '/certificates/udyam-registration-certificate.pdf',
             thumbnail: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
-        },
-        {
-            id: 3,
-            title: 'Professional Staffing Certification',
-            description: 'Certified by the National Association of Personnel Services',
-            issuer: 'National Association of Personnel Services',
-            category: 'Professional Services',
-            pdfUrl: '/certificates/shop-act-licence.pdf',
-            thumbnail: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'
         }
     ];
 
@@ -90,7 +81,7 @@ const Certificates = () => {
 
 
                 {/* Certificates Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     {filteredCertificates.map((certificate) => (
                         <div
                             key={certificate.id}

@@ -4,62 +4,62 @@ import { Linkedin, Mail, Phone } from 'lucide-react';
 const Team = () => {
     const teamMembers = [
         {
-            name: 'Alexandra Martinez',
+            name: 'Ganesh Shinde',
             position: 'Chief Executive Officer',
             department: 'Leadership',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
+            image: '/images/ganesh.jpg',
             bio: 'With over 15 years in talent acquisition, Alexandra leads our company with a vision to revolutionize employee staffing solutions.',
-            email: 'alexandra@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Strategic Leadership', 'Business Development', 'Client Relations']
         },
         {
-            name: 'James Wilson',
+            name: 'Pooja Shinde',
             position: 'Director of Operations',
             department: 'Operations',
-            image: 'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            image: '/images/pooja.jpg',
             bio: 'James ensures seamless operations and maintains our high standards of service delivery across all client engagements.',
-            email: 'james@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Operations Management', 'Process Optimization', 'Quality Assurance']
         },
         {
-            name: 'Maria Garcia',
+            name: 'Niraj Patil',
             position: 'Senior Recruitment Manager',
             department: 'Talent Acquisition',
-            image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+            image: '/images/niraj.jpg',
             bio: 'Maria specializes in executive search and has successfully placed over 500 professionals in leadership roles.',
-            email: 'maria@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Executive Search', 'Leadership Recruiting', 'Industry Expertise']
         },
         {
-            name: 'Daniel Brown',
+            name: 'Nitin Jadhav',
             position: 'Technology Recruitment Lead',
             department: 'Tech Division',
-            image: 'https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+            image: '/images/nitin.jpg',
             bio: 'Daniel leads our technology recruitment team, specializing in placing software engineers, data scientists, and IT professionals.',
-            email: 'daniel@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Tech Recruitment', 'Software Engineering', 'Data Science']
         },
         {
-            name: 'Sophie Anderson',
+            name: 'Shubham Shinde',
             position: 'Client Success Manager',
             department: 'Client Relations',
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
+            image: '/images/shubham.jpg',
             bio: 'Sophie ensures our clients achieve their staffing goals and maintains long-term relationships built on trust and excellence.',
-            email: 'sophie@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Client Relations', 'Account Management', 'Customer Success']
         },
         {
-            name: 'Ryan Taylor',
+            name: 'Abhijeet Birambole',
             position: 'Healthcare Staffing Specialist',
             department: 'Healthcare Division',
-            image: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+            image: '/images/abhi.jpg',
             bio: 'Ryan brings deep healthcare industry knowledge and helps medical facilities find qualified professionals.',
-            email: 'ryan@employeesupplier.com',
+            email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Healthcare Recruiting', 'Medical Staffing', 'Compliance']
         }
@@ -81,11 +81,11 @@ const Team = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {teamMembers.map((member, index) => (
                         <div key={index} className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
-                            <div className="relative overflow-hidden">
+                            <div className="relative w-full max-w-[390px] aspect-[13/15] overflow-hidden bg-gray-100 flex items-center justify-center mx-auto">
                                 <img
                                     src={member.image}
                                     alt={member.name}
-                                    className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+                                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             </div>

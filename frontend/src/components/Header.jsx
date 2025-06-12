@@ -45,7 +45,7 @@ const Header = () => {
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2">
-                        <Users className="h-8 w-8 text-primary-600" />
+                        <img src="/logo.png" style={{ height: '65px' }} />
                         <span className="text-xl font-bold text-gray-900">
                             {import.meta.env.VITE_COMPANY_NAME}
                         </span>
