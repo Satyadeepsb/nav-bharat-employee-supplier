@@ -15,18 +15,18 @@ const Services = () => {
             description: 'Flexible workforce solutions for short-term projects, seasonal demands, or cover for absent employees.',
             features: ['Project-based hiring', 'Seasonal workforce', 'Emergency coverage', 'Skill-specific roles']
         },
-        {
-            icon: Settings,
-            title: 'Contract Staffing',
-            description: 'Specialized professionals for specific projects or contract periods. Perfect for technical and consulting roles.',
-            features: ['IT contractors', 'Consultants', 'Project managers', 'Technical specialists']
-        },
-        {
-            icon: HeadphonesIcon,
-            title: 'HR Consulting',
-            description: 'Complete HR solutions including policy development, compliance, and workforce planning strategies.',
-            features: ['HR policy development', 'Compliance audits', 'Workforce planning', 'Training programs']
-        }
+        // {
+        //     icon: Settings,
+        //     title: 'Contract Staffing',
+        //     description: 'Specialized professionals for specific projects or contract periods. Perfect for technical and consulting roles.',
+        //     features: ['IT contractors', 'Consultants', 'Project managers', 'Technical specialists']
+        // },
+        // {
+        //     icon: HeadphonesIcon,
+        //     title: 'HR Consulting',
+        //     description: 'Complete HR solutions including policy development, compliance, and workforce planning strategies.',
+        //     features: ['HR policy development', 'Compliance audits', 'Workforce planning', 'Training programs']
+        // }
     ];
 
     return (
@@ -34,7 +34,7 @@ const Services = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Our Services
+                        NES Services
                     </h2>
                     <p className="text-lg text-gray-600">
                         Comprehensive employee supplier solutions tailored to meet your business needs,

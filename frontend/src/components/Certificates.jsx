@@ -71,7 +71,7 @@ const Certificates = () => {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        Our Certifications & Credentials
+                        NES Certifications & Credentials
                     </h2>
                     <p className="text-lg text-gray-600">
                         We maintain the highest standards of quality, compliance, and professionalism.
@@ -201,7 +201,7 @@ const Certificates = () => {
                         </h3>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Our certifications ensure that we meet the highest industry standards
-                            and regulatory requirements for staffing and HR services.
+                            and regulatory requirements for employee suppliers services.
                         </p>
                     </div>
 
@@ -213,9 +213,9 @@ const Certificates = () => {
                             <h4 className="text-lg font-semibold text-gray-900 mb-2">
                                 Security Compliant
                             </h4>
-                            <p className="text-gray-600 text-sm">
-                                SOC 2 Type II certified with robust data protection measures
-                            </p>
+                            {/*<p className="text-gray-600 text-sm">
+                                Certified with robust data protection measures
+                            </p>*/}
                         </div>
 
                         <div className="text-center">
@@ -225,9 +225,9 @@ const Certificates = () => {
                             <h4 className="text-lg font-semibold text-gray-900 mb-2">
                                 Quality Certified
                             </h4>
-                            <p className="text-gray-600 text-sm">
+                           {/* <p className="text-gray-600 text-sm">
                                 ISO 9001:2015 certified quality management systems
-                            </p>
+                            </p>*/}
                         </div>
 
                         <div className="text-center">
@@ -237,9 +237,9 @@ const Certificates = () => {
                             <h4 className="text-lg font-semibold text-gray-900 mb-2">
                                 Legally Compliant
                             </h4>
-                            <p className="text-gray-600 text-sm">
+                            {/*<p className="text-gray-600 text-sm">
                                 Full compliance with employment laws and regulations
-                            </p>
+                            </p>*/}
                         </div>
                     </div>
                 </div>

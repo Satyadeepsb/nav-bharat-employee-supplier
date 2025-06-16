@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Users, Award, Clock } from 'lucide-react';
+import { Target, Users, Award, Clock, BadgeCheck } from 'lucide-react';
 
 const About = () => {
     const features = [
@@ -25,16 +25,46 @@ const About = () => {
         }
     ];
 
+    const whyChooseUs = {
+        'Verified & Experienced Drivers' : 'Every driver is carefully vetted through background checks, license verification, and physical fitness screening. Most of our drivers bring years of hands-on experience in government and logistics transport',
+        'PAN-India Reach': 'Be it metros, remote regions, or industrial hubs—we have an active and ready network of drivers across India to meet your exact location needs.',
+        'Government Contract Experts' : 'With proven experience in handling drivers for various government tenders, we understand compliance, documentation, and accountability inside out.',
+        'Fast & Reliable Deployment' : 'Our dynamic database and manpower planning allow us to deploy qualified drivers on short notice—without compromising on quality or readiness.',
+        'Smart Driver Matching' : 'Using advanced technology, we ensure that each requirement is matched with the most suitable and skilled driver, saving you time and operational hassle.',
+        'Complete Responsibility & Peace of Mind' : 'From recruitment to deployment, we take full ownership of the process—ensuring timely service, transparent communication, and dependable performance so you can focus on your operations worry-free.',
+        '24x7 Support System' : 'Our dedicated support team is available around the clock to resolve issues, manage emergencies, and ensure smooth replacements whenever needed.'
+    }
+
+    const stats = [
+        { value: '200+', label: 'Happy Clients' },
+        { value: '2K+', label: 'Employees Placed' },
+        { value: '98%', label: 'Success Rate' },
+        { value: '24/7', label: 'Support' }
+    ]
+
     return (
         <section id="about" className="py-20 bg-white">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                        About Our Employee Supplier Services
+                        NES Vision
                     </h2>
                     <p className="text-lg text-gray-600">
-                        With years of experience in talent acquisition and workforce management,
-                        we've helped hundreds of businesses find the right employees to drive their success.
+                        To become India’s most trusted and scalable driver supply partner for government and enterprise transportation—recognized for our quality, reliability, safety-first approach, and commitment to empowering skilled drivers through sustainable employment.
+                    </p>
+                </div>
+                <div className="max-w-3xl mx-auto text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        About NES
+                    </h2>
+                    <p className="text-lg text-gray-600">
+                        Navabharat is a leading provider of experienced, reliable, and verified truck and bus drivers for government contracts and logistics projects across India.
+                    </p>
+                    <p className="text-lg text-gray-600">
+                        With a strong understanding of the transportation industry and the specific needs of public sector organizations, we serve as a vital link between skilled drivers and institutions seeking dependable manpower.
+                    </p>
+                    <p className="text-lg text-gray-600">
+                        Whether it's heavy vehicle transport, long-haul logistics, or urban bus operations – we ensure quality, discipline, and on-time driver deployment you can count on.
                     </p>
                 </div>
 
@@ -55,45 +85,33 @@ const About = () => {
                 </div>
 
                 <div className="mt-16 bg-gray-50 rounded-2xl p-8 md:p-12">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                        <div>
-                            <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-                                Why Choose Us?
-                            </h3>
-                            <ul className="space-y-4">
-                                {[
-                                    'Industry expertise across multiple sectors',
-                                    'Comprehensive background checks and verification',
-                                    'Flexible employment solutions',
-                                    'Dedicated account management',
-                                    'Competitive pricing with transparent costs'
-                                ].map((item, index) => (
-                                    <li key={index} className="flex items-start gap-3">
-                                        <div className="w-2 h-2 bg-primary-600 rounded-full mt-2"></div>
-                                        <span className="text-gray-700">{item}</span>
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        {/* Why Choose Us Section */}
+                        <div className="mb-16">
+                            <h2 className="text-4xl font-bold text-gray-900 mb-12">Why Choose NES?</h2>
+                            <ul className="space-y-8">
+                                {Object.entries(whyChooseUs).map(([title, description], index) => (
+                                    <li key={index} className="flex items-start gap-6">
+                                        <BadgeCheck className="w-10 h-10 text-blue-500 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="text-xl font-semibold text-gray-900 mb-2">{title}</h4>
+                                            <p className="text-gray-600 leading-relaxed">{description}</p>
+                                        </div>
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="text-center">
-                            <div className="grid grid-cols-2 gap-6">
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <div className="text-3xl font-bold text-primary-600 mb-2">500+</div>
-                                    <div className="text-gray-600">Happy Clients</div>
+
+                        {/* Stats Section */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                            {stats.map((stat, index) => (
+                                <div key={index * 3} className="bg-white p-6 rounded-lg shadow-sm">
+                                    <div key={index} className="text-center">
+                                        <div className="text-4xl font-bold text-blue-600 mb-2">{stat.value}</div>
+                                        <div className="text-gray-600 font-medium">{stat.label}</div>
+                                    </div>
                                 </div>
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <div className="text-3xl font-bold text-primary-600 mb-2">5K+</div>
-                                    <div className="text-gray-600">Employees Placed</div>
-                                </div>
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <div className="text-3xl font-bold text-primary-600 mb-2">98%</div>
-                                    <div className="text-gray-600">Success Rate</div>
-                                </div>
-                                <div className="bg-white p-6 rounded-lg shadow-sm">
-                                    <div className="text-3xl font-bold text-primary-600 mb-2">24/7</div>
-                                    <div className="text-gray-600">Support</div>
-                                </div>
-                            </div>
+                            ))}
                         </div>
                     </div>
                 </div>

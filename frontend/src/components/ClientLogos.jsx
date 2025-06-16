@@ -13,7 +13,7 @@ const ClientLogos = () => {
         },
         {
             name: 'Digital Dynamics',
-            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
+            logo: 'https://rajeshmotors.com/resources/img/logo.png'
         },
         {
             name: 'Healthcare Solutions',
@@ -25,7 +25,7 @@ const ClientLogos = () => {
         },
         {
             name: 'Construction Plus',
-            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
+            logo: 'https://rajeshmotors.com/resources/img/logo.png'
         },
         {
             name: 'Financial Partners',
@@ -37,7 +37,7 @@ const ClientLogos = () => {
         },
         {
             name: 'Energy Dynamics',
-            logo: 'https://www.ashokleyland.com/pwa/img/FE/Ashok-Leyland-Brand-Logo.svg'
+            logo: 'https://rajeshmotors.com/resources/img/logo.png'
         },
         {
             name: 'Media Group',
@@ -49,7 +49,7 @@ const ClientLogos = () => {
         },
         {
             name: 'Education First',
-            logo: 'https://www.jsw.in/sites/all/themes/jsw_theme/images/logos/jsw-energy.jpeg'
+            logo: 'https://rajeshmotors.com/resources/img/logo.png'
         }
     ];
 
@@ -93,29 +93,31 @@ const ClientLogos = () => {
 
                 <div className="text-center mt-8">
                     <p className="text-sm text-gray-500">
-                        Join over 500+ companies that trust us with their staffing needs
+                        Join over 200+ companies that trust us with their staffing needs
                     </p>
                 </div>
             </div>
 
-            <style jsx>{`
-        @keyframes scroll {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        
-        .animate-scroll {
-          animation: scroll 30s linear infinite;
-        }
-        
-        .animate-scroll:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
+        <style jsx="true">{`
+            @keyframes scroll {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+            
+            .animate-scroll {
+              animation: scroll 30s linear infinite;
+            }
+            
+            .animate-scroll:hover {
+              animation-play-state: paused;
+            }
+          `}
+        </style>
+
         </section>
     );
 };
