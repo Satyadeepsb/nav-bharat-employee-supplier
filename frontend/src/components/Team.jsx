@@ -28,20 +28,10 @@ const Team = () => {
             position: 'Client Success Manager',
             department: 'Client Relations',
             image: '/images/shubham.jpg',
-            bio: 'Shubhum ensures our clients achieve their staffing goals and maintains long-term relationships built on trust and excellence.',
+            bio: 'Shubham ensures our clients achieve their staffing goals and maintains long-term relationships built on trust and excellence.',
             email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
             specialties: ['Client Relations', 'Account Management', 'Customer Success']
-        },
-        {
-            name: 'Kedar Shinde',
-            position: 'Staffing Specialist',
-            department: 'Staffing Division',
-            image: '/images/kedar.jpg',
-            bio: 'Kedar brings deep staffing industry knowledge and helps client to find qualified professionals.',
-            email: 'info@navbharatemployeesuppliers.com',
-            linkedin: '#',
-            specialties: ['Recruiting', 'Staffing', 'Compliance']
         },
         {
             name: 'Niraj Patil',
@@ -54,6 +44,16 @@ const Team = () => {
             specialties: ['Executive Search', 'Recruiting', 'Industry Expertise']
         },
         {
+            name: 'Kedar Shinde',
+            position: 'Staffing Specialist',
+            department: 'Staffing Division',
+            image: '/images/kedar.jpg',
+            bio: 'Kedar brings deep staffing industry knowledge and helps client to find qualified professionals.',
+            email: 'info@navbharatemployeesuppliers.com',
+            linkedin: '#',
+            specialties: ['Recruiting', 'Staffing', 'Compliance']
+        },
+        {
             name: 'Nitin Jadhav',
             position: 'Recruitment Lead',
             department: 'Recruitment Division',
@@ -61,7 +61,7 @@ const Team = () => {
             bio: 'Nitin leads our recruitment team, specializing in placing professionals.',
             email: 'info@navbharatemployeesuppliers.com',
             linkedin: '#',
-            specialties: ['Recruitment', 'Leadership']
+            specialties: ['Recruitment', 'Compliance', 'Leadership']
         },
         {
             name: 'Abhijeet Birambole',
@@ -91,19 +91,20 @@ const Team = () => {
                 {/* First Row - 4 Members */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
                     {teamMembers.slice(0, 4).map((member, index) => (
-                        <TeamCard key={index} member={member} />
+                        <div key={index} className="max-w-[240px] w-full mx-auto">
+                        <TeamCard member={member} />
+                        </div>
                     ))}
                 </div>
 
                 {/* Second Row - 3 Members Centered */}
                 <div className="flex justify-center gap-8 flex-wrap">
                     {teamMembers.slice(4).map((member, index) => (
-                        <div key={index} className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(25%-1rem)] max-w-[390px]">
-                            <TeamCard member={member} />
+                        <div key={index} className="max-w-[240px] w-full mx-auto">
+                        <TeamCard member={member} />
                         </div>
                     ))}
                 </div>
-
 
                 <div className="text-center mt-12">
                     <div className="bg-gray-50 rounded-xl p-8 max-w-2xl mx-auto">
@@ -127,18 +128,18 @@ const Team = () => {
 };
 
 const TeamCard = ({ member }) => (
-    <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group w-full max-w-[390px] mx-auto">
-        <div className="relative w-full aspect-[13/15] bg-gray-100">
-            <img
+    <div className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group w-full mx-auto">
+        <div className="relative w-full aspect-[3/4] max-h-[260px]">
+        <img
                 src={member.image}
                 alt={member.name}
-                className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
 
-        <div className="p-6 flex flex-col justify-between h-full">
-            <div className="text-center mb-4">
+        <div className="p-4 flex flex-col justify-between h-full">
+        <div className="text-center mb-4">
                 <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
                 <p className="text-primary-600 font-medium mb-1">{member.position}</p>
                 <p className="text-sm text-gray-500">{member.department}</p>
@@ -160,7 +161,7 @@ const TeamCard = ({ member }) => (
                 </div>
             </div>
 
-            <div className="flex justify-center gap-3 pt-4 border-t border-gray-100 mt-auto">
+           {/* <div className="flex justify-center gap-3 pt-4 border-t border-gray-100 mt-auto">
                 <a
                     href={`mailto:${member.email}`}
                     className="p-2 text-gray-400 hover:text-primary-600 transition-colors"
@@ -175,7 +176,7 @@ const TeamCard = ({ member }) => (
                 >
                     <Linkedin className="h-4 w-4" />
                 </a>
-            </div>
+            </div>*/}
         </div>
     </div>
 );

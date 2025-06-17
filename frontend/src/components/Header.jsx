@@ -39,14 +39,14 @@ const Header = () => {
 
     return (
         <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-            isScrolled ? 'bg-white shadow-lg' : 'bg-white/90 backdrop-blur-sm'
+            isScrolled ? 'bg-gray-900 text-white shadow-lg' : 'bg-gray-900 text-white backdrop-blur-sm'
         }`}>
             <nav className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-18">
                     {/* Logo */}
                     <Link to="/" className="flex items-center space-x-2">
-                        <img src="/logo.png" style={{ height: '65px' }} alt="NES" />
-                        <span className="text-xl font-bold text-gray-900">
+                        <img src="/logo.png" style={{ height: '80px' }} alt="NES" />
+                        <span className="text-xl font-bold text-secondary-500">
                             {import.meta.env.VITE_COMPANY_NAME}
                         </span>
                     </Link>
@@ -59,8 +59,8 @@ const Header = () => {
                                 to={item.path}
                                 className={`transition-colors duration-200 font-medium ${
                                     isActivePath(item)
-                                        ? 'text-primary-600 border-b-2 border-primary-600'
-                                        : 'text-gray-700 hover:text-primary-600'
+                                        ? 'text-white-600 border-b-2 border-secondary-500'
+                                        : 'text-white-700 hover:text-white-600'
                                 }`}
                             >
                                 {item.name}

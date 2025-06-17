@@ -12,6 +12,10 @@ export default {
           500: '#3b82f6',
           600: '#2563eb',
           700: '#1d4ed8'
+        },
+        secondary: {
+          50: '#eff6ff',
+          500: '#f0ca78',
         }
       },
       fontFamily: {

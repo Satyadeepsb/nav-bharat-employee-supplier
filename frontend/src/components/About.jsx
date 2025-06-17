@@ -50,7 +50,7 @@ const About = () => {
                         NES Vision
                     </h2>
                     <p className="text-lg text-gray-600">
-                        To become India’s most trusted and scalable driver supply partner for government and enterprise transportation—recognized for our quality, reliability, safety-first approach, and commitment to empowering skilled drivers through sustainable employment.
+                        To become India’s most trusted and scalable driver supply partner for government and enterprise transportation recognized for our quality, reliability, safety-first approach, and commitment to empowering skilled drivers through sustainable employment.
                     </p>
                 </div>
                 <div className="max-w-3xl mx-auto text-center mb-16">
