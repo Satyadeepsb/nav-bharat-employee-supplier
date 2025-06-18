@@ -60,7 +60,15 @@ const Footer = () => {
                         <div className="space-y-3 text-sm">
                             <div className="flex items-center gap-2 text-secondary-500">
                                 <Phone className="h-4 w-4" />
-                                <span>{import.meta.env.VITE_COMPANY_PHONE}</span>
+                                <div className="flex flex-col">
+                                    <div>
+                                        {import.meta.env.VITE_COMPANY_PHONE}
+                                    </div>
+                                    <div>
+                                        {import.meta.env.VITE_COMPANY_PHONE1}
+                                    </div>
+                                </div>
+
                             </div>
                             <div className="flex items-center gap-2 text-secondary-500">
                                 <Mail className="h-4 w-4" />

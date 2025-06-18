@@ -87,6 +87,7 @@ const ContactForm = () => {
                                 <div>
                                     <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
                                     <p className="text-gray-600">{import.meta.env.VITE_COMPANY_PHONE}</p>
+                                    <p className="text-gray-600">{import.meta.env.VITE_COMPANY_PHONE1}</p>
                                 </div>
                             </div>
 
