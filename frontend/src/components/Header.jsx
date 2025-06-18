@@ -87,7 +87,7 @@ const Header = () => {
 
                 {/* Mobile Navigation */}
                 {isMenuOpen && (
-                    <div className="md:hidden bg-white border-t">
+                    <div className="md:hidden bg-gray-900 border-t">
                         <div className="px-2 pt-2 pb-3 space-y-1">
                             {navigation.map((item) => (
                                 <Link
@@ -95,8 +95,8 @@ const Header = () => {
                                     to={item.path}
                                     className={`block px-3 py-2 rounded-md transition-colors ${
                                         isActivePath(item)
-                                            ? 'text-primary-600 bg-primary-50'
-                                            : 'text-gray-700 hover:text-primary-600 hover:bg-gray-50'
+                                            ? 'text-grey-600 bg-secondary-500'
+                                            : 'text-grey-700 hover:text-primary-600 hover:bg-secondary-500'
                                     }`}
                                 >
                                     {item.name}

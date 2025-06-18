@@ -4,7 +4,7 @@ import { Linkedin, Mail, Phone } from 'lucide-react';
 const Team = () => {
     const teamMembers = [
         {
-            name: 'Ganesh Shinde',
+            name: 'Mr. Ganesh Shinde',
             position: 'Chief Executive Officer',
             department: 'Leadership',
             image: '/images/ganesh.jpg',
@@ -14,7 +14,7 @@ const Team = () => {
             specialties: ['Strategic Leadership', 'Business Development', 'Client Relations']
         },
         {
-            name: 'Pooja Shinde',
+            name: 'Mrs. Pooja Shinde',
             position: 'Director of Operations',
             department: 'Operations',
             image: '/images/pooja.jpg',
@@ -24,7 +24,7 @@ const Team = () => {
             specialties: ['Operations Management', 'Process Optimization', 'Quality Assurance']
         },
         {
-            name: 'Shubham Shinde',
+            name: 'Mr. Shubham Shinde',
             position: 'Client Success Manager',
             department: 'Client Relations',
             image: '/images/shubham.jpg',
@@ -34,7 +34,7 @@ const Team = () => {
             specialties: ['Client Relations', 'Account Management', 'Customer Success']
         },
         {
-            name: 'Niraj Patil',
+            name: 'Mr. Niraj Patil',
             position: 'Senior Recruitment Manager',
             department: 'Talent Acquisition',
             image: '/images/niraj.jpg',
@@ -44,7 +44,7 @@ const Team = () => {
             specialties: ['Executive Search', 'Recruiting', 'Industry Expertise']
         },
         {
-            name: 'Kedar Shinde',
+            name: 'Mr. Kedar Shinde',
             position: 'Staffing Specialist',
             department: 'Staffing Division',
             image: '/images/kedar.jpg',
@@ -54,7 +54,7 @@ const Team = () => {
             specialties: ['Recruiting', 'Staffing', 'Compliance']
         },
         {
-            name: 'Nitin Jadhav',
+            name: 'Mr. Nitin Jadhav',
             position: 'Recruitment Lead',
             department: 'Recruitment Division',
             image: '/images/nitin.jpg',
@@ -64,7 +64,7 @@ const Team = () => {
             specialties: ['Recruitment', 'Compliance', 'Leadership']
         },
         {
-            name: 'Abhijeet Birambole',
+            name: 'Mr. Abhijeet Birambole',
             position: 'Staffing Specialist',
             department: 'Staffing Division',
             image: '/images/abhi.jpg',

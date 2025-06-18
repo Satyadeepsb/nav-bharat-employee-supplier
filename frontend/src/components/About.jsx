@@ -27,11 +27,11 @@ const About = () => {
 
     const whyChooseUs = {
         'Verified & Experienced Drivers' : 'Every driver is carefully vetted through background checks, license verification, and physical fitness screening. Most of our drivers bring years of hands-on experience in government and logistics transport',
-        'PAN-India Reach': 'Be it metros, remote regions, or industrial hubs—we have an active and ready network of drivers across India to meet your exact location needs.',
+        'PAN-India Reach': 'Be it metros, remote regions, or industrial hubs we have an active and ready network of drivers across India to meet your exact location needs.',
         'Government Contract Experts' : 'With proven experience in handling drivers for various government tenders, we understand compliance, documentation, and accountability inside out.',
-        'Fast & Reliable Deployment' : 'Our dynamic database and manpower planning allow us to deploy qualified drivers on short notice—without compromising on quality or readiness.',
+        'Fast & Reliable Deployment' : 'Our dynamic database and manpower planning allow us to deploy qualified drivers on short notice without compromising on quality or readiness.',
         'Smart Driver Matching' : 'Using advanced technology, we ensure that each requirement is matched with the most suitable and skilled driver, saving you time and operational hassle.',
-        'Complete Responsibility & Peace of Mind' : 'From recruitment to deployment, we take full ownership of the process—ensuring timely service, transparent communication, and dependable performance so you can focus on your operations worry-free.',
+        'Complete Responsibility & Peace of Mind' : 'From recruitment to deployment, we take full ownership of the process ensuring timely service, transparent communication, and dependable performance so you can focus on your operations worry-free.',
         '24x7 Support System' : 'Our dedicated support team is available around the clock to resolve issues, manage emergencies, and ensure smooth replacements whenever needed.'
     }
 
