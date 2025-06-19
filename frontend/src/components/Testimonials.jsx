@@ -28,14 +28,14 @@ const Testimonials = () => {
         //     testimonial: 'The temporary staffing solutions provided by EmployeeSupplier helped us navigate our busy season seamlessly. Professional, reliable, and always responsive to our changing needs.'
         // },
         {
-            name: 'Rajesh Rasiklal Shah',
+            name: 'Kuberdas Shah',
             position: 'Managing Director',
             company: 'Rajesh Motors',
             image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
             rating: 5,
             testimonial: 'During the period from 01/04/2018 to 31/03/2023, the firm “Navbharat Employee Suppliers” has provided us with an average of 75 heavy license-holding drivers per month on a contractual basis for M/s. Rajesh Motors (Maharashtra) Pvt. Ltd. The services provided by the said firm have been satisfactory and very well organized. During the mentioned period, they have supplied the required number of drivers consistently as per our demand and necessity.\n' +
                 '\n' +
-                'No disputes or issues have arisen with the said firm during the above period, hence this certificate is being issued as a proof of their experience.'
+                'No disputes or issues have arisen with the said firm during the above period, hence this certificate is being issued as proof of their experience.'
         },
         {
             name: 'Lisa Park',

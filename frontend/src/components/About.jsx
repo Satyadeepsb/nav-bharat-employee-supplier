@@ -26,12 +26,12 @@ const About = () => {
     ];
 
     const whyChooseUs = {
-        'Verified & Experienced Drivers' : 'Every driver is carefully vetted through background checks, license verification, and physical fitness screening. Most of our drivers bring years of hands-on experience in government and logistics transport',
+        'Verified & Experienced Drivers' : 'Every driver is carefully vetted through background checks, license verification, and physical fitness screening. Most of our drivers bring years of hands-on experience in government and logistics transport.',
         'PAN-India Reach': 'Be it metros, remote regions, or industrial hubs we have an active and ready network of drivers across India to meet your exact location needs.',
-        'Government Contract Experts' : 'With proven experience in handling drivers for various government tenders, we understand compliance, documentation, and accountability inside out.',
-        'Fast & Reliable Deployment' : 'Our dynamic database and manpower planning allow us to deploy qualified drivers on short notice without compromising on quality or readiness.',
+        'Government Contract Experts' : 'With proven experience of handling drivers for various government tenders, we understand compliance, documentation, and accountability inside out.',
+        'Fast & Reliable Deployment' : 'Our dynamic database and workforce planning allow us to deploy qualified drivers on short notice without compromising on quality or readiness.',
         'Smart Driver Matching' : 'Using advanced technology, we ensure that each requirement is matched with the most suitable and skilled driver, saving you time and operational hassle.',
-        'Complete Responsibility & Peace of Mind' : 'From recruitment to deployment, we take full ownership of the process ensuring timely service, transparent communication, and dependable performance so you can focus on your operations worry-free.',
+        'Complete Responsibility & Peace of Mind' : 'From recruitment to deployment, we take full ownership of the process, ensuring timely service, transparent communication, and dependable performance so you can focus on your operations worry-free.',
         '24x7 Support System' : 'Our dedicated support team is available around the clock to resolve issues, manage emergencies, and ensure smooth replacements whenever needed.'
     }
 
@@ -61,10 +61,19 @@ const About = () => {
                         Navabharat is a leading provider of experienced, reliable, and verified truck and bus drivers for government contracts and logistics projects across India.
                     </p>
                     <p className="text-lg text-gray-600">
-                        With a strong understanding of the transportation industry and the specific needs of public sector organizations, we serve as a vital link between skilled drivers and institutions seeking dependable manpower.
+                        With a strong understanding of the transportation industry and the specific needs of public sector organizations, we serve as a vital link between skilled drivers and institutions seeking dependable workforce.
                     </p>
                     <p className="text-lg text-gray-600">
                         Whether it's heavy vehicle transport, long-haul logistics, or urban bus operations – we ensure quality, discipline, and on-time driver deployment you can count on.
+                    </p>
+                    <p className="text-lg text-gray-600">
+                        From sourcing to delivery, we provide comprehensive services that optimise efficiency. Our expertise ensures that your supply chain is reliable, responsive, and ready to meet your needs.
+                    </p>
+                    <p className="text-lg text-gray-600">
+                        We provide parcel transportation and door deliveries to our customers.
+                    </p>
+                    <p className="text-lg text-gray-600">
+                        We operate at a proven and robust level of business processes & systems owing to our Enterprise Resource Planning (ERP) solution.
                     </p>
                 </div>
 

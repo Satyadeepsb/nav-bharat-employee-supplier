@@ -201,7 +201,7 @@ const Certificates = () => {
                         </h3>
                         <p className="text-gray-600 max-w-2xl mx-auto">
                             Our certifications ensure that we meet the highest industry standards
-                            and regulatory requirements for employee suppliers services.
+                            and regulatory requirements for employee supplier services.
                         </p>
                     </div>
 
