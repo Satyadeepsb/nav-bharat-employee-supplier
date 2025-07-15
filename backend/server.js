@@ -47,6 +47,7 @@ app.use(cors(corsOptions));
 app.options('*', cors(corsOptions));
 console.log(allowedOrigins)
 
+app.set('trust proxy', true);
 // Rate limiting
 app.use(generalLimiter);
 
